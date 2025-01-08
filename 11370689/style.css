@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Caveat Brush" , sans-serif;
+}
+
+.logo{
+ width: 150px;
+ margin: 20px;
+ opacity: 1;
+ height: auto;
+}
+
+.container{
+  background-image:linear-gradient(rgba(35, 54, 75, 0.378),rgba(78, 118, 85, 0.416)), url("images/A.png");
+  width: 100%;
+  height: 100vh;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.banner{
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+.banner h1{
+  font-size: 120px;
+  color: rgb(4, 49, 94);
+  margin-bottom: 30px;
+  text-shadow: 4px 4px 6px rgba(255, 255, 255, 0.582);
+
+  animation: move 3s;
+}
+
+.banner strong{
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.banner p{
+  font-size: 30px;
+  color: rgb(9, 64, 115);
+  margin-bottom: 40px;
+
+  animation: deby 2s backwards;
+  animation-delay: 0.5s;
+}
+
+.button{
+  font-size: 24px;
+  border: 3px solid;
+  border-radius: 50px;
+  box-shadow: 2px 2px 4px rgba(22, 39, 58, 0.558);
+
+  padding: 10px 35px;
+  background-color: #eeeeee8a;
+  text-decoration: none;
+  font-weight: bold;
+
+  animation: mobtn 3s backwards;
+  animation-delay: 1s;
+}
+
+
+
+@keyframes move{
+    from{transform: translate(150px);opacity: 0;}
+    to{transform: translate(0px);opacity: 1;}
+}
+
+@keyframes mobtn {
+  from { transform: translateX(120px);opacity: 0;}
+  to { transform: translateX(0px);opacity: 1;}
+}
+
+@keyframes deby{
+  from{transform: translate(-150px);opacity: 0;}
+  to{transform: translate(0px);opacity: 1;}
+}
+
+
