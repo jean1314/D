@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content=>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>聯絡我</title>
+
+    <!-- CSS -->
+        <link rel="stylesheet" href="reset.css">
+        <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+        <link href="style2.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="news" class="big-bg">
+            <header class="page-header wrapper">
+ 
+                <nav>
+                    <ul class="main-nav">
+                        <li><a href="file:///C:/Users/Jean/Desktop/11370689/index.html">首頁</a></li>
+                        <li><a href="file:///C:/Users/Jean/Desktop/11370689/ABOUT.html">關於我</a></li>
+                        <li><a href="file:///C:/Users/Jean/Desktop/11370689/PORTFOLIO.html">作品</a></li>
+                        <li><a href="file:///C:/Users/Jean/Desktop/11370689/CONTACT.html">聯絡我</a></li>
+                     </ul>
+                </nav>
+            </header>
+
+        </div><!-- /#news -->
+    </div>
+
+        <div id="London" class="tabcontent">
+            <h3>FACEBOOK</h3>
+            <p><a href="http://www.facebook.com/?locale=zh_TW">我的FB帳號</a><br></p>
+            <img src="images/2.png" width="80%" alt="">
+        </div>
+
+        <div id="Paris" class="tabcontent">
+            <h3>INSTAGRAM</h3> 
+            <p><a href="http://www.instagram.com/child_5968715/">我的IG帳號</a><br></p>
+            <img src="images/3.png" width="80%" alt="">
+
+        </div>
+
+        <div id="Tokyo" class="tabcontent">
+            <h3>LINE</h3>
+            <p>ID:dead_child</p><br>
+            <img src="images/4.png" width="50%" alt="">
+        </div>
+
+    <script>
+    function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
+    </script>
+        	<!-- Scripts -->
+             <script src="assets/js/jquery.min.js"></script>
+             <script src="assets/js/jquery.dropotron.min.js"></script>
+             <script src="assets/js/browser.min.js"></script>
+             <script src="assets/js/breakpoints.min.js"></script>
+              <script src="assets/js/util.js"></script>
+             <script src="assets/js/main.js"></script>
+</body>
+</html>
